@@ -10,12 +10,24 @@ body {
     padding: 20px;
 }
 .category-header {
-    text-align: center;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
     background-color: #a47c58;
     color: rgb(0, 0, 0);
-    padding: 1px;
+    padding: 10px;
     margin-bottom: 17px;
 }
+
+.category-header .back-icon {
+    height: 30px;
+}
+
+.category-header h2 {
+    flex: 1;
+    text-align: center;
+}
+
 .categories {
     display: flex;
     justify-content: space-around;
@@ -61,6 +73,26 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    text-decoration: none;
+}
+
+p {
+    text-decoration: none;
+}
+ 
+.back-button {
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 30px;
 }
 
 .harga {
