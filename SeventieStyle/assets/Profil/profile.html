@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeventieStyle Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/SeventieStyle/assets/Profil/asset/profile.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/SeventieStyle/index.html"><b>SEVENTIESTYLE</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/SeventieStyle/index.html#shop">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/SeventieStyle/index.html#category">Category</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+   <!-- <div class="row border p-5 shadow">
+         Form di sebelah kiri -->
+        <div class="secprof col-12 col-sm-13 col-md-9 border p-5 shadow">
+            <form id="loginForm" action="/SeventieStyle/index.html" method="get"> 
+                <div class="row align-items-center justify-content-center">
+                    <div class="header-text mb-4 d-flex justify-content-center">
+                        <h3>My Profile</h3>
+                    </div>
+                    
+                    <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-4 border p-2">
+                    <div class="mb-3">
+                        <label for="username" class="form-label mb-2 me-3">Username</label>
+                        <input type="text" id="username" class="form-control uniform-input" value="Chris11">
+                    </div>
+                    
+                    <div class="mb-3 ">
+                      <label for="email" class="form-label mb-2 me-3">Email</label>
+                      <input type="email" id="email" class="form-control uniform-input" value="charles@gmail.com">
+                    </div>
+                    <div class="mb-3 ">
+                      <label for="phone" class="form-label mb-2 me-3">Phone Number</label>
+                      <input type="text" id="phone" class="form-control uniform-input" value="*******23">
+                    </div>
+                    
+                    <div class="mb-3 ">
+                      <label class="form-label">Gender</label>
+                      <div>
+                        <div>
+                          <input type="radio" id="male" name="gender" checked>
+                          <label for="male">Laki-Laki </label>
+                        </div>
+                        <div>
+                          <input type="radio" id="female" name="gender">
+                          <label for="female">Perempuan</label>
+                        </div>
+                      </div>
+                    </div>
+                    
+                
+                    <div class="mb-3">
+                      <label for="birth-date" class="form-label">Birth Date</label>
+                      <input type="text" class="form-control uniform-input" id="birth-date" value="**/05/20**">
+                    </div>
+                    
+
+                    <!-- <div class="mb-3">
+                      <label for="password" class="form-label mb-2">Password</label>
+                      <input type="password" id="password" class="form-control form-control-lg bg-light fs-6" placeholder="Enter Password" required maxlength="14">
+                    </div>
+                    <div class="mb-3">
+                        <label for="captchaInput" class="form-label mb-2">CAPTCHA: <span id="captchaQuestion" class="char-count"></span></label>
+                        <input type="text" id="captchaInput" class="form-control form-control-lg bg-light fs-6" placeholder="Enter CAPTCHA" required maxlength="6">
+                    </div> -->
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-lg btn-primary w-60 fs-6">Save</button>
+                    </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Foto di sebelah kanan -->
+        
+    
+</div>
+ 
+  <!-- <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row border p-5 shadow box-area">
+        <div class="col-md-6 d-flex justify-content-center align-items-center flex-column left-box">
+            <div class="featured-image mb-3">
+                <img src="LOGO.png" class="img-fluid" style="width: 500px;">
+            </div>
+        </div> 
+    </div>
+  </div>
+      <h5 class="text-center mb-4">My Profil</h5>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" value="Chris11">
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" value="Charles de Ghaulle">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" value="charles@gmail.com">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phone" value="*******23">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3 text-center">
+              <img src="https://via.placeholder.com/100" alt="Profile Image" class="rounded-circle">
+              <br>
+              <button type="button" class="btn btn-outline-secondary mt-2">Select Image</button>
+            </div>
+            <div class="mb-3">
+              <label for="shop-name" class="form-label">Shop Name</label>
+              <input type="text" class="form-control" id="shop-name" value="SEVENTIESTYLE">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Gender</label>
+              <div>
+                <input type="radio" id="male" name="gender" checked>
+                <label for="male">Laki-Laki</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Perempuan</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="birth-date" class="form-label">Birth Date</label>
+              <input type="text" class="form-control" id="birth-date" value="**/05/20**">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+  body {
+    background-color: #F3E1D1;
+    color: #4a2c2a;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background: #8c5e3d;
+  }
+
+  .secprof{
+    background-color: #ffffff;
+    border-radius: 2%;
+  }
+
+  .header-text h3{
+    font-weight: bold;
+    color: #8C5E3D;  
+  }
+
+
+  
+  .form-label {
+    font-weight: bold;
+    color: #4a2c2a;
+  }
+  
+  button.btn {
+    background-color: #8c5e3d;
+    border: none;
+  }
+  
+  button.btn:hover {
+    background-color: #6a452d;
+  }
+  
+  /* INPUTAN */
+  .uniform-input {
+    width: 100%; /* Memastikan semua input memiliki lebar penuh dari container */
+    max-width: 300px; /* Atur lebar maksimal untuk mencegah terlalu panjang */
+    height: 40px; /* Atur tinggi seragam */
+    border: 1px solid #ccc; /* Warna garis */
+    border-radius: 5px; /* Tambahkan sedikit lengkungan pada sudut */
+    padding: 8px 12px; /* Memberi jarak di dalam input */
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar elemen */
+  }
+  
+  .uniform-input:focus {
+    border-color: #007bff; /* Ubah warna garis saat input difokuskan */
+    outline: none; /* Hilangkan outline default browser */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Tambahkan efek glow */
+  }
+  
+  .form-label {
+    font-weight: bold;
+    color: #4a2c2a;
+  }
+  
+  button.btn-primary {
+    background-color: #8c5e3d;
+    border: none;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #6a452d;
+  }
+  
+  button.btn-outline-secondary {
+    color: #8c5e3d;
+    border-color: #8c5e3d;
+  }
+  
+  button.btn-outline-secondary:hover {
+    background-color: #8c5e3d;
+    color: #fff;
+  }
+  

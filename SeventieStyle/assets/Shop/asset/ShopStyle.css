@@ -1,0 +1,231 @@
+/* Variabel untuk warna dan ukuran */
+:root {
+  --main-bg-light: #f3e1d1;
+  --main-bg-dark: #8d542b;
+  --text-color: #4a2f2f;
+  --highlight-color: #b56935;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-family: Arial, sans-serif;
+  --padding: 20px;
+}
+
+/* Gradasi Background */
+body {
+  background: linear-gradient(to bottom, var(--main-bg-light), var(--main-bg-dark));
+  font-family: var(--font-family);
+  margin: 0;
+}
+
+/* Header Toko */
+.store-header {
+  background: #fff;
+  padding: var(--padding);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  margin-bottom: var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.store-image {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.back-icon {
+  position: absolute;
+  top: var(--padding);
+  left: var(--padding);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-icon:hover {
+  transform: scale(1.1);
+}
+
+.main-image {
+  border-radius: 8px;
+  max-width: 200px;
+}
+
+.store-details {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.store-title {
+  font-size: 24px;
+  color: var(--text-color);
+  margin: 15px 0;
+  text-align: center;
+  margin-right: 150px;
+}
+
+.store-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 45px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  gap: 8px;
+}
+
+/* Produk Grid */
+.product-card .chat-icon {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  object-fit: contain;
+}
+
+.chat-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Produk Card */
+.product-card {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-price-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.product-price {
+  color: var(--highlight-color);
+  font-size: 16px;
+}
+
+.chat-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.chat-icon:hover {
+  transform: scale(1.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-card p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivitas */
+@media (max-width: 800px) {
+  .store-header {
+    flex-direction: column;
+  }
+
+  .store-image {
+    justify-content: center;
+  }
+
+  .main-image {
+    max-width: 140px;
+  }
+
+  .store-title {
+    font-size: 20px;
+    margin-left: 150px;
+  }
+
+  .store-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .main-image {
+    max-width: 120px;
+  }
+
+  .store-title {
+    font-size: 18px;
+  }
+
+  .stat {
+    font-size: 14px;
+  }
+
+  .icon, .back-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 320px) {
+  .main-image {
+    max-width: 100px;
+  }
+
+  .store-title {
+    font-size: 16px;
+  }
+
+  .stat {
+    font-size: 12px;
+  }
+
+  .icon, .back-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

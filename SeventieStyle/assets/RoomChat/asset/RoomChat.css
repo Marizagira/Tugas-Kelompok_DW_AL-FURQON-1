@@ -1,0 +1,125 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f1e1d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.chat-container {
+    max-width: 90vw; 
+    max-height: 90vh; 
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #8C5E3D; 
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    position: relative; 
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute; 
+    left: 30px;
+    cursor: pointer;
+    bottom: 25px;
+}
+
+.header-info {
+    text-align: center; 
+}
+
+/* .header-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.header-info p {
+    font-size: 12px;
+    margin-top: 3px;
+} */
+
+/* Body */
+.chat-body {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #fff;
+    word-wrap: break-word;
+}
+
+.chat-message {
+    max-width: 75%;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.received {
+    background-color: #8C5E3D; 
+    color: #fff;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #8C5E3D; 
+    color: #fff;
+    align-self: flex-end;
+}
+
+/* Footer Input */
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.send-button {
+    background: none;
+    border: none;
+    color: #a36a4e;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}

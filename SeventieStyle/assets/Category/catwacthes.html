@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="kategori.css">
+</head>
+<body>
+    <div class="category-header">
+        <h2>CATEGORY</h2>
+    </div>
+    <div class="container">
+        <div class="categories">
+            <a href="cattops.html" class="category-card">
+                <img style="height: auto; width: 120px;" src="Picture/shirt.jpeg" alt="Tops">
+                <p><b>TOPS</b></p>
+            </a>
+            <a href="catbott.html" class="category-card">
+                <img style="height: auto; width: 120px;" src="Picture/shorts.jpeg" alt="bottoms">
+                <p><b>BOTTOMS</b></p>
+            </a>
+            <a href="catsung.html" class="category-card">
+                <img style="height: auto; width: 120px;" src="Picture/sunglasses.jpeg" alt="SUNGLASSES">
+                <p><b>SUNGLASSES</b></p>
+            </a>
+            <a href="catboot.html" class="category-card">
+                <img style="height: auto; width: 120px;" src="Picture/boots.jpeg" alt="boots">
+                <p><b>BOOTS</b></p>
+            </a>
+            <a href="catbags.html" class="category-card">
+                <img style="height: auto; width: 120px;" src="Picture/bag.jpeg" alt="bags">
+                <p><b>BAGS</b></p>
+            </a>
+            <a href="cathats.html" class="category-card">
+                <img style="height: auto; width: 120px;" src="Picture/hat.jpeg" alt="Hats">
+                <p><b>HATS</b></p>
+            </a>
+            <a href="catwacthes.html" style="background-color: rgb(255, 255, 255);" class="category-card">
+                <img style="height: auto; width: 120px;" src="Picture/watch.jpeg" alt="watches">
+                <p><b>WATCHES</b></p>
+            </a>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" onclick="goToChat('Keqiss Watch', 'IDR 125K', 'RCsaveThePlanet.html')">
+                <img src="Picture/Keqiss Watch.jpeg" alt="Keqiss Watch">
+                <h3>Keqiss Watch</h3>
+                <div class="harga"> 
+                    <p>IDR 125K</p>
+                    <a href="#chat" >   
+                        <img style="width: 60px;" src="Picture/chat2.jpg" alt="Chat Icon" class="chat-icon">
+                    </a> 
+                </div>
+            </div>
+            <div class="product-card" onclick="goToChat('Boldies Watch', 'IDR 145K', 'RCsaveThePlanet.html')">
+                <img src="Picture/Boldies Watch.jpeg" alt="Boldies Watch">
+                <h3>Boldies Watch</h3>
+                <div class="harga">
+                    <p>IDR 145K</p>
+                    <a href="#CHAT" >   
+                        <img style="width: 60px;" src="Picture/chat2.jpg" alt="Chat Icon" class="chat-icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card" onclick="goToChat('Flowiey Watch', 'IDR 145K', 'RCsaveThePlanet.html')">
+                <img src="Picture/Flowiey Watch.jpeg" alt="Flowiey Watch">
+                <h3>Flowiey Watch</h3>
+                <div class="harga">
+                    <p>IDR 145K</p>
+                    <a href="#CHAT" >   
+                        <img style="width: 60px;" src="Picture/chat2.jpg" alt="Chat Icon" class="chat-icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card" onclick="goToChat('brown leather watch', 'IDR 175K', 'RCtimemachine.html')">
+                <img src="Picture/brown leather watch.jpeg" alt="brown leather watch">
+                <h3>brown leather watch</h3>
+                <div class="harga">
+                    <p>IDR 175K</p>
+                    <a href="#CHAT" >   
+                        <img style="width: 60px;" src="Picture/chat2.jpg" alt="Chat Icon" class="chat-icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card" onclick="goToChat('brown rubber watch', 'IDR 200K', 'RCtimemachine.html')">
+              <img src="Picture/brown rubber watch.jpeg" alt="brown rubber watch">
+              <h3>brown rubber watch</h3>
+              <div class="harga">
+                <p>IDR 200K</p>
+                <a href="#CHAT" >   
+                    <img style="width: 60px;" src="Picture/chat2.jpg" alt="Chat Icon" class="chat-icon">
+                </a>
+            </div>
+          </div>
+        </div>
+
+         <!-- JavaScript -->
+        <script>
+            function goToChat(productName, price, targetPage) {
+                // Simpan data produk ke localStorage
+                localStorage.setItem('productName', productName);
+                localStorage.setItem('productPrice', price);
+
+                // Arahkan ke halaman yang sesuai
+                window.location.href = targetPage;
+            }
+        </script>
+    </body>
+</html>
